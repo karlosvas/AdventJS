@@ -20,6 +20,20 @@ function getStaircasePaths(steps, maxJump) {
 
   return result;
 }
-// console.log(getStaircasePaths(4, 2))
-// console.log(getStaircasePaths(5, 2))
-// console.log(getStaircasePaths(3, 3))
+
+getStaircasePaths(2, 1) // [[1, 1]]
+getStaircasePaths(3, 3) // [[1, 1, 1], [1, 2], [2, 1], [3]]
+getStaircasePaths(5, 1) // [[1, 1, 1, 1, 1]]
+getStaircasePaths(5, 2)
+/*
+[
+  [1, 1, 1, 1, 1],
+  [1, 1, 1, 2],
+  [1, 1, 2, 1],
+  [1, 2, 1, 1],
+  [1, 2, 2],
+  [2, 1, 1, 1],
+  [2, 1, 2],
+  [2, 2, 1],
+]
+*/

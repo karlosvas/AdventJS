@@ -19,11 +19,13 @@ function checkIsValidCopy(original, copy) {
     return true
 }
 
-console.log(checkIsValidCopy("s+#:.#c:. s", "s#+:.#c:. s")) //fasle
-console.log(checkIsValidCopy("Santa Claus is coming", "sa#ta cl#us is comin#")) //true
-console.log(checkIsValidCopy('Santa Claus', 's#+:.#c:. s')) // false
-console.log(checkIsValidCopy('S#nta Claus', 'S#ntA ClauS')) // false
-console.log(checkIsValidCopy('Santa Claus is coming', 'p#nt: cla#s #s c+min#')) // fasle
-console.log(checkIsValidCopy("Santa Claus is coming", "sa#ta cl#us is comin#"))
-console.log(checkIsValidCopy("Santa Claus viene a buscarte para darte muchos regalos y eso es espectacular porque da mucha felicidad a todos los niños", "Santa Claus viene a buscarte para darte muchos regalos y eso es espectacular porque da mucha felicidad a todos los niño")) // false
-
+checkIsValidCopy(
+    'Santa Claus is coming',
+    'sa#ta Cl#us i+ comin#'
+) // true
+checkIsValidCopy(
+    's#nta Cla#s is coming',
+    'p#nt: cla#s #s c+min#'
+) // false (por la p inicial)
+checkIsValidCopy('Santa Claus', 's#+:. c:. s') // true
+checkIsValidCopy('Santa Claus', 's#+:.#c:. s') // false (hay un # donde no debería)

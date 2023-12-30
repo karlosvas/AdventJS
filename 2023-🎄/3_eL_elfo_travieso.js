@@ -15,3 +15,16 @@ function findBalancedSegment(message) {
 
     return maxSegment;
 }
+
+let original, modified;
+original = 'abcd'
+modified = 'abcde'
+findNaughtyStep(original, modified) // 'e'
+
+original = 'stepfor'
+modified = 'stepor'
+findNaughtyStep(original, modified) // 'f'
+
+original = 'abcde'
+modified = 'abcde'
+findNaughtyStep(original, modified) // ''

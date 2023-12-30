@@ -18,4 +18,17 @@ function compile(code) {
     return c;
 }
 
-console.log(compile('--¿+++?+++¿--?')) // -1
+compile('++*-') // 3
+// (1 + 1) * 2 - 1 = 3
+
+compile('++%++<') // 6
+// 1 + 1 + 1 + 1 + 1 + 1 = 6
+
+compile('++<--') // 0
+// 1 + 1 - 1 - 1 = 0
+
+compile('++¿+?') // 3
+// 1 + 1 + 1 = 3
+
+compile('--¿+++?') // -2
+// - 1 - 1 = -2

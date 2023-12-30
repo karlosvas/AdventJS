@@ -49,4 +49,22 @@ function createChristmasTree(ornaments, height) {
     return res;
 }
 
-console.log(createChristmasTree("x", 3));
+
+createChristmasTree("xo", 4)
+/*
+Expected:
+"   x
+  o x
+ o x o
+x o x o
+    |
+    "
+
+Actual:
+"   x
+  o x
+ o x o
+x o x o
+    |
+    "
+*/

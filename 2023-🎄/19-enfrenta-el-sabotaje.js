@@ -20,9 +20,18 @@ function revealSabotage(store) {
 
     return store
 }
-console.log(revealSabotage([
+
+const store = [
     ['*', ' ', ' ', ' '],
     [' ', ' ', '*', ' '],
     [' ', ' ', ' ', ' '],
     ['*', ' ', ' ', ' ']
-]))
+]
+
+console.log(revealSabotage(store))
+// [
+//     ['*', '2', '1', '1'],
+//     ['1', '2', '*', '1'],
+//     ['1', '2', '1', '1'],
+//     ['*', '1', ' ', ' ']
+// ]

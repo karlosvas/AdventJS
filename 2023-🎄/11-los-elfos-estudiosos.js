@@ -13,7 +13,9 @@ function getIndexsForPalindrome(word) {
     return null;
 }
 
-console.log(getIndexsForPalindrome('abab')) // 0,1// baab
-console.log(getIndexsForPalindrome('abac')) // null
-console.log(getIndexsForPalindrome('aaababa')) // 1,3
-console.log(getIndexsForPalindrome('rotaratov')) // 4,8 // rotavator
+getIndexsForPalindrome('anna') // []
+getIndexsForPalindrome('abab') // [0, 1]
+getIndexsForPalindrome('abac') // null
+getIndexsForPalindrome('aaaaaaaa') // []
+getIndexsForPalindrome('aaababa') // [1, 3]
+getIndexsForPalindrome('caababa') // null

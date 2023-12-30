@@ -16,5 +16,15 @@ function findBalancedSegment(message) {
     return maxSegment;
 }
 
-console.log(findBalancedSegment([1, 0, 1, 0])) // [0,3]
-console.log(findBalancedSegment([1, 1, 0, 1, 0, 1]))
+findBalancedSegment([1, 1, 0, 1, 1, 0, 1, 1])
+//                         |________|
+// posición del segmento:    [2, 5]
+// más largo equilibrado
+// de 0s y 1s
+
+findBalancedSegment([1, 1, 0])
+//                      |__|
+//                     [1, 2]
+
+findBalancedSegment([1, 1, 1])
+// no hay segmentos equilibrados: []
