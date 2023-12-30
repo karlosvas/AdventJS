@@ -15,3 +15,6 @@ function findBalancedSegment(message) {
 
     return maxSegment;
 }
+
+console.log(findBalancedSegment([1, 0, 1, 0])) // [0,3]
+console.log(findBalancedSegment([1, 1, 0, 1, 0, 1]))
