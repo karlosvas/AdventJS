@@ -38,19 +38,22 @@ Los carriles están numerados al final con /1, /2, etc.
 La vista es isométrica, por lo que los carriles inferiores están desplazados hacia la derecha.
 */
 
+// Ejemplos:
+console.log(drawRace([0, 5, -3], 10));
 /*
-Ejemplos: drawRace([0, 5, -3], 10);
   ~~~~~~~~~~ /1
  ~~~~~r~~~~ /2
 ~~~~~~~r~~ /3
-
-drawRace([2, -1, 0, 5], 8);
+*/
+console.log(drawRace([2, -1, 0, 5], 8));
+/*
    ~~r~~~~~ /1
   ~~~~~~~r /2
  ~~~~~~~~ /3
 ~~~~~r~~ /4
-
-drawRace([3, 7, -2], 12);
+*/
+console.log(drawRace([3, 7, -2], 12));
+/*
   ~~~r~~~~~~~~ /1
  ~~~~~~~~r~~~ /2
 ~~~~~~~~~r~~ /3
